@@ -5,12 +5,12 @@ import static java.lang.Math.abs;
 public class excelaufgabe {
 
     public static void main(String[] args) {
-        System.out.println(decrypt(encrypt("CHECKER", "HSSHSSH"), "HSSHSSH"));
+        System.out.println(decrypt(encrypt("ChEcKeR", "HSSHSSH"), "HSSHSSH"));
     }
 
     public static String encrypt(String textString, String keyString) {
-        char[] text = textString.toCharArray();
-        char[] key = keyString.toCharArray();
+        char[] text = textString.toUpperCase().toCharArray();
+        char[] key = keyString.toUpperCase().toCharArray();
 
         String result = "";
 

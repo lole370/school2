@@ -26,7 +26,7 @@ public class Pascal {
         }
 
         for(int[] l : p)
-            printCenteredLine(l, 6);
+            printCenteredLine(l, 6, 0);
 
     }
 
